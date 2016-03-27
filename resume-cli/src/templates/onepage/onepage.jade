@@ -1,0 +1,30 @@
+
+doctype html
+html(lang="en")
+    head
+        include sections/head
+
+    body
+        div.wrapper
+            // section: header
+            include sections/header
+            
+            // section: skills
+            section#skills
+                h2 Skills Summary
+                div.content
+                    include sections/skill
+
+            // section: experience
+            section#experience
+                h2 Work Experience
+                div.content
+                    include sections/experience
+
+            // section: education
+            section#education
+                h2 Education
+                div.content
+                    include sections/education
+
+            // section: projects

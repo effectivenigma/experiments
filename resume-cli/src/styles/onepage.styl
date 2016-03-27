@@ -1,0 +1,110 @@
+@require "_lib/variables"
+//@require "nib"
+
+html
+    font-size: $root-font-size
+
+.nomargin
+    margin: 0
+
+.inline
+    display: inline-block
+
+.push-right
+    float: right
+
+.wrapper
+    // set to A4 portrait paper size so it is printer friendly
+    max-width: unit(8.5*$one-in-to-px, 'rem')
+    margin: auto // this will auto center the content
+
+    font-family: $base-font-fam
+    font-size: $base-font-size
+
+    *
+        line-height: $base-line-height
+        box-sizing: border-box
+
+    .highlight
+        color: $highlight-color
+        font-weight: 700
+
+.header
+    width: 100%
+    padding: 10rem
+    text-align: left
+
+    >*
+        @extend .inline
+
+    h1
+        font-family: $title-font-fam
+        font-size: 40rem
+        font-weight: 700
+        line-height: 1.1em
+        width: 48%
+        margin: 0.25em 0
+
+    .contact-card
+        font-weight: 300
+        color: $primary-color
+        vertical-align: baseline
+        margin: 0.8em 0
+        @extend .push-right
+
+section
+    @extend .header
+    border-top: 1rem solid $border-color
+
+    >*
+        @extend .inline
+        padding: 5rem
+        vertical-align: top
+        text-align: left
+
+    h2
+        font-family: $title-font-fam
+        font-size: 18rem
+        font-weight: 500
+        width: 15%
+        color: $secondary-color
+        margin: 0
+        
+    
+    h3, h4
+        margin: 0.1em
+
+    .content
+        font-family: $base-font-fam
+        font-size: $base-font-size
+        font-weight: 400
+        width: 84%
+        color: $primary-color
+
+    &#skills ul
+        padding-left: 10rem
+
+    .keywords
+        font-weight: 500
+        margin: .3em 10rem .4em //2rem 10rem
+
+    .company
+        @extend .inline
+        font-weight: 500
+        font-size: 14rem
+
+    .location
+        @extend .inline
+
+    .position
+        @extend .inline
+        color: $secondary-color //#707070 // TODO
+        font-weight: 500
+
+    .date
+        @extend .inline
+        @extend .push-right
+        text-align: right
+
+    .degree
+        @extend section .position

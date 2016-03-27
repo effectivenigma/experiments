@@ -1,0 +1,40 @@
+{
+	"skills_summary":
+	[
+		{
+			"desc": "Words words words words words words words words words words words words words words words words words words words",
+			"tech": "keyword keyword keyword keyword keyword "
+		},
+		{
+			"desc": " words words words words words words words words words words words words words words words",
+			"tech": "keyword keyword keyword keyword "
+		},
+		{
+			"desc": " words words words words words words words words words words words words",
+			"tech": "keyword keyword keyword keyword "
+		}
+	],
+    "summary":
+    [
+        {
+            "desc": " words words words words words words words words words words words words",
+            "details": {
+                "Specialty": "keyword keyword keyword ",
+                "Specialty2": "keyword keyword keyword ",
+                "Specialty3": "keyword keyword keyword "
+            }
+        },
+        {
+            "desc": " words words words words words words words words words words words words",
+            "details": {
+                "Specialty": "keyword keyword keyword keyword "
+            }
+        },
+        {
+            "desc": " words words words words words words words words words words words words",
+            "details": {
+                "Specialty": "keyword keyword keyword keyword "
+            }
+        }
+    ]
+}

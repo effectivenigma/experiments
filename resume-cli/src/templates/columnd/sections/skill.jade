@@ -1,0 +1,11 @@
+//include ../../data/skill.json
+
+div.entity
+    each item in summary
+        div.cols
+            li.col-1 #{item.desc}
+            div.inline.col-2
+                each keywords, category in item.details
+                    div
+                        div.inline.category #{category}:
+                        div.inline #{keywords}    

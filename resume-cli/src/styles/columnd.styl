@@ -1,0 +1,116 @@
+@require "_lib/variables"
+//@require "nib"
+
+html
+    font-size: $root-font-size
+
+.nomargin
+    margin: 0
+
+.inline
+    display: inline-block
+    vertical-align: top
+
+.push-right
+    float: right
+
+.wrapper
+    // set to A4 portrait paper size so it is printer friendly
+    max-width: unit(8.5*$one-in-to-px, 'rem')
+    margin: auto // this will auto center the content
+
+    font-family: $base-font-fam
+    font-size: $base-font-size
+
+    *
+        line-height: $base-line-height
+        box-sizing: border-box
+        text-align: left
+        
+    >*  
+        width: 100%
+        padding: 10rem //5rem if things don't fit
+
+    .highlight
+        color: $highlight-color
+        font-weight: 700
+
+.header
+    >*
+        @extend .inline
+
+    h1
+        font-family: $title-font-fam
+        font-size: 40rem
+        font-weight: 700
+        line-height: 1.1em
+        width: 48%
+        margin: 0.25em 0
+
+    .contact-card
+        font-weight: 300
+        color: $primary-color
+        vertical-align: baseline
+        margin: 0.8em 0
+        @extend .push-right
+
+section
+    border-top: 1rem solid $border-color
+
+    >*
+        padding: 5rem
+        vertical-align: top
+        text-align: left
+
+    h2
+        font-family: $title-font-fam
+        font-size: 18rem
+        font-weight: 500
+        color: $secondary-color
+        margin: 0
+        
+    
+    h3, h4
+        margin: 0.1em
+
+    .content
+        font-family: $base-font-fam
+        font-size: $base-font-size
+        font-weight: 400
+        color: $primary-color
+
+    &#summary
+        .keywords
+            font-weight: 500
+            font-size: 12rem
+            
+        .indent
+            margin: .3em 10rem .4em // 2rem 10rem
+     
+    &#experience,
+    &#education   
+        .entity,
+        ul
+            margin: 5rem 0
+            
+        .col-1
+            width: 22%
+            *
+                text-align: right
+                
+        .col-2
+            padding-left: 15rem
+            width: 75%
+
+        .company
+            font-weight: 500
+            font-size: 14rem
+
+        .position,
+        .degree
+            color: $secondary-color //#707070 // TODO
+            font-weight: 400
+
+        .date,
+        .location
+            font-size: 12rem

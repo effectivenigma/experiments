@@ -1,0 +1,13 @@
+//include ../../data/experience.json
+
+each experience in experiences
+    div.entity
+        div.inline.col-1
+            h3.company.highlight #{experience.company} 
+            div.location #{experience.location}
+            div.date #{experience.date_short}
+        div.inline.col-2
+            h4.position #{experience.position}
+            ul
+                each point in experience.desc
+                    li #{point}

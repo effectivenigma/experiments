@@ -1,0 +1,39 @@
+{
+	"experiences":
+	[
+		{
+			"company": "Company1",
+			"location": "City, PROV",
+			"position": "Position",
+			"date": "October 2010 - Present",
+            "date_short": "Oct 2010 - Present",
+			"desc": [
+				"Productive things that went into production",
+				"Failed experiments that lead to productive projects",
+                "Words words words words words words words words words words words words words words words words words words words words words words words"
+			]
+		},{
+			"company": "Company2",
+			"location": "City, PROV",
+			"position": "Position",
+			"date": "October 2005 - January 2009",
+            "date_short": "October 2005 - January 2009",
+			"desc": [
+				"Productive things that went into production",
+				"Failed experiments that lead to productive projects",
+                "Words words words words words words words words words words words words words words words words words words words words words words words"
+			]
+		},{
+			"company": "Company3",
+			"location": "City, PROV",
+			"position": "Position",
+			"date": "October 2007 - Decemeber 2007",
+            "date_short": "Oct 2007 - Dec 2007",
+			"desc": [
+				"Productive things that went into production",
+				"Failed experiments that lead to productive projects",
+                "Words words words words words words words words words words words words words words words words words words words words words words words"
+			]
+		}
+	]
+}

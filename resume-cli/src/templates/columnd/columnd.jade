@@ -1,0 +1,35 @@
+
+doctype html
+html(lang="en")
+    head
+        include sections/head
+
+    body
+        div.wrapper
+            // section: header
+            include sections/header
+            // section: sills summary
+            section#summary
+                h2 
+                    div.inline. 
+                        Skills Summary
+                    div.inline.horz-line
+                div.content
+                    //include sections/summary
+                    include sections/skill
+            // section: experience
+            section#experience
+                h2 
+                    div.inline. 
+                        Work Experience
+                    div.inline.horz-line
+                div.content
+                    include sections/experience
+            // section: education
+            section#education
+                h2
+                    div.inline. 
+                        Education
+                    div.inline.horz-line
+                div.content
+                    include sections/education
